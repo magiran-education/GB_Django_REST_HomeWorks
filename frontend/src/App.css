@@ -1,3 +1,30 @@
+.header {
+  width: 100%;
+  height: 25px;
+  background-color: coral;
+}
+.menuList {}
+.menuItem {
+  display: inline-block;
+  margin-right: 25px;
+}
+.content {
+  height: 250px;
+  background-color: bisque;
+  padding-left: 25px;
+
+}
+.footer {
+  width: 100%;
+  height: 25px;
+  background-color: coral;
+}
+.rights_reserved {
+  margin-left: 25px;
+}
+
+
+
 .App {
   text-align: center;
 }

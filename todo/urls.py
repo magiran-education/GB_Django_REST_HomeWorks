@@ -6,9 +6,9 @@ from projects.views import ProjectModelViewSet, ToDoModelViewSet
 
 
 router = DefaultRouter()
-router.register('users', UserModelViewSet)
-router.register('projects', ProjectModelViewSet)
-router.register('todo', ToDoModelViewSet)
+router.register('users', UserModelViewSet, basename='users')
+router.register('projects', ProjectModelViewSet, basename='projects')
+router.register('todo', ToDoModelViewSet, basename='todo')
 
 urlpatterns = [
     path('api/', include(router.urls)),

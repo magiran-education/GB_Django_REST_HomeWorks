@@ -9,6 +9,6 @@ class UserModelViewSet(ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserModelSerializer
     # pagination_class = UserPageNumberPagination
-    pagination_class = UserLimitOffsetPagination
+    # pagination_class = UserLimitOffsetPagination
     allowed_methods = ['GET', 'PATCH']
     renderer_classes = [JSONRenderer, BrowsableAPIRenderer]

@@ -12,7 +12,7 @@ class ProjectModelViewSet(ModelViewSet):
     renderer_classes = [JSONRenderer, BrowsableAPIRenderer]
     queryset = Project.objects.all()
     serializer_class = ProjectModelSerializer
-    pagination_class = ProjectPageNumberPagination
+    # pagination_class = ProjectPageNumberPagination
 
     def get_queryset(self):
         """Фильтрация по имени проекта.
@@ -28,7 +28,7 @@ class ToDoModelViewSet(ModelViewSet):
     renderer_classes = [JSONRenderer, BrowsableAPIRenderer]
     queryset = ToDo.objects.all()
     serializer_class = ToDoModelSerializer
-    pagination_class = ToDoPageNumberPagination
+    # pagination_class = ToDoPageNumberPagination
     filterset_class = ToDoFilter
 
     # model_time_filter = "%Y-%m-%dT%H:%M:%S.%fZ"

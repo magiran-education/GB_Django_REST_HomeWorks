@@ -10,5 +10,5 @@ class UserModelViewSet(ModelViewSet):
     serializer_class = UserModelSerializer
     # pagination_class = UserPageNumberPagination
     # pagination_class = UserLimitOffsetPagination
-    allowed_methods = ['GET', 'PATCH']
+    # allowed_methods = ['GET', 'PATCH']
     renderer_classes = [JSONRenderer, BrowsableAPIRenderer]
